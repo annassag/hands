@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0,
+                                 maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <title>Hands of Time; Hands of Work</title>
+    <style>
+
+@media screen and (max-width: 600px) { 
+      * {
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        outline: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+        background-color: black;
+        position: relative;
+        box-sizing: border-box;
+      }
+
+      #bg {
+        background-image: url("bg.jpg");
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        height: 100vh;
+        width: 100vw;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        overflow: hidden;
+    }
+
+      #textweb {
+        display: none;
+      }
+  }
+
+@media screen and (min-width: 600px) { 
+
+      body {
+        margin: 0;
+        background-color: black;
+        pointer-events: none;
+      }
+
+      #bg {
+        background-image: url("web_desktop2.png");
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        overflow: hidden;
+        pointer-events: none;
+    }
+
+      #textweb {
+        font-family: 'Work Sans', sans-serif;
+        font-size: 18px;
+        visibility: visible;
+        color: white;
+        position: fixed;
+        bottom: 3%;
+        right: 2%;
+      }
+    }
+
+    </style>
+  </head>
+
+  <body>
+    <div id="bg">
+    <div id="textweb">Background Image: Detail of "Cleaning-Woman" by Francois Bonvin, 1817–1887</div>
+  </body>
+  <script>
+
+  document.addEventListener("click", start);
+
+ 
+  function start() {
+    if(screen.width < 720){
+    window.location.href = "compass.html";
+    }
+    }
+
+
+
+  </script>
+</html>
