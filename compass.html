@@ -9,7 +9,7 @@
                                  maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
-    <title>Sweeping the Circle of Projection</title>
+    <title>Hands of Time; Hands of Work</title>
     <style>
 
 @media screen and (max-width: 600px) { 
@@ -80,14 +80,16 @@
       }
 
       .start-btn,
-      .start-btn2 {
+      .start-btn2,
+      .start-btn3 {
+        letter-spacing: 0.5px;
         position: fixed;
         top: 20px;
-        font-size: 26px;
-        font-family: sans-serif;
-        width: 90px;
+        font-size: 20px;
+        font-family: 'work sans', sans-serif;
+        width: 70px;
         margin: 0;
-        padding: 3px 0 0 0;
+        padding: 3px;
         text-align: center;
         text-decoration: none;
 /*        height: 20px;*/
@@ -103,14 +105,21 @@
       }
 
       .start-btn2 {
+        top: 60px;
+        right: 10px;
+        border: 1.5px solid white;
+        color: white;
+        background-color: black;
+
+      }
+      .start-btn3 {
         top: 65px;
         right: 10px;
-        border: 1.5px solid lime;
+/*        border: 1.5px solid lime;*/
         color: lime;
         background-color: black;
 
       }
-
 
       .start-btn:active,
       .start-btn:focus,
@@ -211,6 +220,7 @@
     <button class="start-btn">Start</button>
     <button class="start-btn2" onclick="window.location.href='read.html'">Text</button>
     <div class="compass">
+
       <div id="arrow"></div>
       <div class="compass-circle"></div>
       <div class="my-point"></div>
@@ -264,82 +274,97 @@
       
     if ( compass > 22.5) {
         document.getElementById("text3").innerHTML = "Mike Lefevre<br>Steelworker";
-        document.getElementById("text2").innerHTML = "If a carpenter built a cabin for poets, I think the least the poets owe the carpenter is just three or four one-liners on the wall. A little plaque: Though we labor with our minds, this place we can relax in was built by someone who can work with his hands. And his work is as noble as ours. I think the poet owes something to the guy who builds the cabin for him.";
+        document.getElementById("text2").innerHTML = "Though we labor with our minds, this place we can relax in was built by someone who can work with his hands.";
         document.getElementById("img").style.backgroundImage="url('1a.jpg')";           
       }
       
       if ( compass > 45) {
-        document.getElementById("text2").innerHTML = "Your voice, have you noticed that cleaning women are almost always quiet, working alone?";
+        document.getElementById("text3").innerHTML = "Hub Dillard<br>Construction worker";
+        document.getElementById("text2").innerHTML = "Your hands and feet, the pairs of them, have to work together.";
         document.getElementById("img").style.backgroundImage="url('1b.jpg')";              
       }
 
       if ( compass > 67.5) {
-        document.getElementById("text2").innerHTML = "Your voice, have you noticed that cleaning women are almost always quiet, working alone?";
+        document.getElementById("text3").innerHTML = "Babe Secoli<br>Supermarket checker";
+        document.getElementById("text2").innerHTML = "When my boss asks me how I know, I just know by the movements of their hands.";
         document.getElementById("img").style.backgroundImage="url('2a.jpg')";           
       }  
 
       if ( compass > 90) {
-        document.getElementById("text2").innerHTML = "The body functions mechanically but is still subject to surveillance";
+        document.getElementById("text3").innerHTML = "Dolores Dante<br>Waitress";
+        document.getElementById("text2").innerHTML = "Some don’t care. When the plate is down you can hear the sound. I try not to have that sound. I want my hands to be right when I serve. I pick up a glass, I want it to be just right. ";
         document.getElementById("img").style.backgroundImage="url('2b.jpg')";    
       }
 
       if ( compass > 112.5) {
-        document.getElementById("text2").innerHTML = "The body functions mechanically but is still subject to surveillance";
+        document.getElementById("text3").innerHTML = "Donna Murray<br>Bookbinder";
+        document.getElementById("text2").innerHTML = "Because a book is a life, like one man is a life. Yes, yes, this work is good for me, therapeutic for old age . . . just keep going with the hands . . .";
         document.getElementById("img").style.backgroundImage="url('8b.jpg')";    
       }
 
       if ( compass > 135) {
-        document.getElementById("text2").innerHTML = "Cleaning women also see everything and know everything";
+        document.getElementById("text3").innerHTML = "Key Stepkin<br>Baker";
+        document.getElementById("text2").innerHTML = "We teach ’em: “This is the way your hands should move.” “This is how you tell when your bread’s done, if it feels this way.” “Why don’t you feel my bread?";
         document.getElementById("img").style.backgroundImage="url('3a.jpg')";    
               }
 
       if ( compass > 157.5) {
-        document.getElementById("text2").innerHTML = "The body functions mechanically but is still subject to surveillance";
+        document.getElementById("text3").innerHTML = "Tom McCoy<br>Proofreader";
+        document.getElementById("text2").innerHTML = "I noticed somebody talking on the phone the other day. He said he was at the office. It dawned on me when a guy says, “I’m at the office,” it means, “I’m a white-collar worker.” It means, “I don’t dirty my hands.”";
         document.getElementById("img").style.backgroundImage="url('3b.jpg')";    
       }
 
       if ( compass > 180) {
-        document.getElementById("text2").innerHTML = "The mind is absorbed but not used, idly hidden and ready to depart";
+        document.getElementById("text3").innerHTML = "David Bender<br>Manufacturer";
+        document.getElementById("text2").innerHTML = "I love mechanics. All my fingernails are chopped off. I washed my hands before you came in. Grease. Absolutely. I get into things. You stick a ruler here or a measure here. I want this, I want that.";
         document.getElementById("img").style.backgroundImage="url('4a.jpg')";    
               }
 
       if ( compass > 202.5) {
-        document.getElementById("text2").innerHTML = "The mind is absorbed but not used, idly hidden and ready to depart";
+        document.getElementById("text3").innerHTML = "Edward Zimmer<br>Stylist";
+        document.getElementById("text2").innerHTML = "I don’t dirty my hands with the chemicals. I’m the stylist. Your symbol right there, the male.";
         document.getElementById("img").style.backgroundImage="url('4b.jpg')";    
               }
 
       if ( compass > 225) {
-        document.getElementById("text2").innerHTML = "But things are taken from you too";
+        document.getElementById("text3").innerHTML = "Wheeler Stanley<br>Automobile plant foreman";
+        document.getElementById("text2").innerHTML = "I felt it was a man’s job. You can do something with your hands. You can go home at night and feel you have accomplished something.";
         document.getElementById("img").style.backgroundImage="url('5a.jpg')";   
               }
 
       if ( compass > 247.5) {
-        document.getElementById("text2").innerHTML = "But things are taken from you too";
+        document.getElementById("text3").innerHTML = "Ned Williams<br>Automobile worker";
+        document.getElementById("text2").innerHTML = "I didn’t do nothin’. I don’t like work, I never did like work. My hands were so soft, like a sponge. Went to a manicurist twice a week. I always wore gloves at work.";
         document.getElementById("img").style.backgroundImage="url('5b.jpg')";   
               }
 
       if ( compass > 270) {
-        document.getElementById("text2").innerHTML = "You lose dignity, get embarrassed and harassed";
+        document.getElementById("text3").innerHTML = "Phil Stallings<br>Spot welder";
+        document.getElementById("text2").innerHTML = "Funny thing is, I don’t mind working at body construction. To a great degree, I enjoy it. I love using my hands—more than I do my mind. ";
         document.getElementById("img").style.backgroundImage="url('6a.jpg')";   
               }
 
       if ( compass > 292.5) {
-        document.getElementById("text2").innerHTML = "You lose dignity, get embarrassed and harassed";
+        document.getElementById("text3").innerHTML = "Roberta Victor<br>Secretary";
+        document.getElementById("text2").innerHTML = "When you’re part of the typing pool, you’re a body, you’re hired labor, a set of hands on the typewriter. ";
         document.getElementById("img").style.backgroundImage="url('6b.jpg')"; 
               }
 
       if ( compass > 315) {
-        document.getElementById("text2").innerHTML = "It's exhausting";
+        document.getElementById("text3").innerHTML = "Roberto Acuna<br>Farm worker";
+        document.getElementById("text2").innerHTML = "If you’re picking lettuce, the thumbnails fall off ’cause they’re banged on the box. Your hands get swollen";
         document.getElementById("img").style.backgroundImage="url('7a.jpg')"; 
               }
 
       if ( compass > 337.5) {
-        document.getElementById("text2").innerHTML = "You lose dignity, get embarrassed and harassed";
+        document.getElementById("text3").innerHTML = "Nancy Rogers<br>Bankteller";
+        document.getElementById("text2").innerHTML = "“I’ll walk up to her and put my hands on her shoulder and she’ll say, “Get your hands off me, white girl, don’t you know you’re not supposed to touch?”";
         document.getElementById("img").style.backgroundImage="url('7b.jpg')"; 
               }
 
       if ( compass > 360) {
-        document.getElementById("text2").innerHTML = "Men with the most power are the nicest, people in the middle are the worst";
+        document.getElementById("text3").innerHTML = "Glenn Stribling<br>Car mechanic";
+        document.getElementById("text2").innerHTML = "If you’re out there in the back, say you’re repacking wheel bearings. Your hands are full of grease. In order to go out in that drive, you have to clean your hands.";
             document.getElementById("img").style.backgroundImage="url('8a.jpg')"; 
               }
 
