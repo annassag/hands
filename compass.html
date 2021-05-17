@@ -139,6 +139,21 @@
     z-index: 300;
     }
 
+    #text3 {
+    background-color: transparent;
+    height: 60px;
+    padding: 5px 15px;
+    position: fixed;
+/*    filter: blur(1.2px);*/
+    top: 5vh;
+    right: 0;
+    left: 0;
+    font-size: 14px;
+    text-align: center;
+    color: yellow;
+    font-family: 'Work Sans', sans-serif;
+    z-index: 300;
+    }
 /*  #video {
       position: fixed;
       right: 0;
@@ -190,9 +205,9 @@
     </style>
   </head>
   <body>
-  <video autoplay loop muted playsinline id="video">
+<!--   <video autoplay loop muted playsinline id="video">
   <source src="film_4.mp4" type="video/mp4">
-  </video>
+  </video> -->
     <div id="img" class="compass"></div>
     <button class="start-btn">Start</button>
     <button class="start-btn2" onclick="window.location.href='read.html'">Text</button>
@@ -202,9 +217,8 @@
       <div class="my-point"></div>
     </div>
     <div id="text2"></div>
-<!--       <audio loop id="audio" controls style="display:none">
-      <source src="sound_2.mp3" type="audio/mpeg"> 
-    </audio> -->
+    <div id="text3"></div>
+
 
   </body>
   <script>
@@ -250,7 +264,8 @@
 
       
     if ( compass > 22.5) {
-        document.getElementById("text2").innerHTML = "Your voice, have you noticed that cleaning women are almost always quiet, working alone?";
+        document.getElementById("text2").innerHTML = "Mike Lefevre<br>Steelworker";
+        document.getElementById("text2").innerHTML = "If a carpenter built a cabin for poets, I think the least the poets owe the carpenter is just three or four one-liners on the wall. A little plaque: Though we labor with our minds, this place we can relax in was built by someone who can work with his hands. And his work is as noble as ours. I think the poet owes something to the guy who builds the cabin for him.";
         document.getElementById("img").style.backgroundImage="url('1a.jpg')";           
       }
       
